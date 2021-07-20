@@ -11,6 +11,7 @@
 #endif
 
 #import "ExampleRequest.h"
+#import "YBNetworkDefine.h"
 #import "YBNetworkCache+Internal.h"
 #import "YBNetworkCache.h"
 #import "YBBaseRequest+Internal.h"
@@ -20,9 +21,6 @@
 #import "YBBaseRequest.h"
 #import "YBBatchRequest.h"
 #import "YBNetworkResponse.h"
-#import "YBNetworkDefine.h"
-#import "ExampleRequest.h"
-#import "YBNetworkDefine.h"
 
 FOUNDATION_EXPORT double YLNetworkManagerVersionNumber;
 FOUNDATION_EXPORT const unsigned char YLNetworkManagerVersionString[];

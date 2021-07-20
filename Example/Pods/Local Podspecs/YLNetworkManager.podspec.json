@@ -18,14 +18,14 @@
     "git": "https://github.com/jifengchao/YLNetworkManager.git",
     "tag": "0.1.1"
   },
-  "source_files": [
-    "YLNetworkManager/**/*",
-    "YLNetworkManager/*"
-  ],
+  "source_files": "YLNetworkManager/README.md",
   "subspecs": [
     {
       "name": "YLNetwork",
-      "source_files": "YLNetworkManager/YLNetwork",
+      "source_files": [
+        "YLNetworkManager/YLNetwork/YBNetworkDefine.h",
+        "YLNetworkManager/YLNetwork/**/*"
+      ],
       "dependencies": {
         "AFNetworking": [
           "~> 4.0.0"
@@ -37,7 +37,7 @@
     },
     {
       "name": "Example",
-      "source_files": "YLNetworkManager/Example",
+      "source_files": "YLNetworkManager/Example/*",
       "dependencies": {
         "YLNetworkManager/YLNetwork": [
 

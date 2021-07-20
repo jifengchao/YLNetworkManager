@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   # s.source           = { :path => '.' }
   s.source           = { :git => 'https://github.com/jifengchao/YLNetworkManager.git', :tag => s.version.to_s }
   # s.source_files = "YLNetworkManager/YBNetworkDefine.h","YLNetworkManager/Example/*"
-  s.source_files = "YLNetworkManager/**/*","YLNetworkManager/*"
+  s.source_files = "YLNetworkManager/README.md"
 
     
   # s.dependency 'AFNetworking','~> 4.0.0'
@@ -31,13 +31,13 @@ Pod::Spec.new do |s|
 
 
   s.subspec 'YLNetwork' do |network|
-    network.source_files = 'YLNetworkManager/YLNetwork'
+    network.source_files = 'YLNetworkManager/YLNetwork/YBNetworkDefine.h','YLNetworkManager/YLNetwork/**/*'
     network.dependency 'AFNetworking','~> 4.0.0'
     network.dependency 'YYCache','~> 1.0.4'
   end
   
   s.subspec 'Example' do |example|
-    example.source_files = 'YLNetworkManager/Example'
+    example.source_files = 'YLNetworkManager/Example/*'
     example.dependency 'YLNetworkManager/YLNetwork'
   end
 
