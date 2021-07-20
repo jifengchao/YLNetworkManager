@@ -1,0 +1,6 @@
+framework module Pods_YLNetworkManager_Example {
+  umbrella header "Pods-YLNetworkManager_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

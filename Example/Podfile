@@ -1,0 +1,16 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'YLNetworkManager_Example' do
+  pod 'YLNetworkManager', :path => '../'
+
+  pod 'AFNetworking','~> 4.0.0'
+  pod 'YYCache','~> 1.0.4'
+  
+  target 'YLNetworkManager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

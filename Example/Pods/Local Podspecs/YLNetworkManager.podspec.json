@@ -1,0 +1,48 @@
+{
+  "name": "YLNetworkManager",
+  "version": "0.1.1",
+  "summary": "YLNetworkManager 网络请求二次封装",
+  "description": "YLNetworkManager",
+  "homepage": "https://github.com/jifengchao/YLNetworkManager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jifengchao": "965524749@qq.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "https://github.com/jifengchao/YLNetworkManager.git",
+    "tag": "0.1.1"
+  },
+  "source_files": [
+    "YLNetworkManager/**/*",
+    "YLNetworkManager/*"
+  ],
+  "subspecs": [
+    {
+      "name": "YLNetwork",
+      "source_files": "YLNetworkManager/YLNetwork",
+      "dependencies": {
+        "AFNetworking": [
+          "~> 4.0.0"
+        ],
+        "YYCache": [
+          "~> 1.0.4"
+        ]
+      }
+    },
+    {
+      "name": "Example",
+      "source_files": "YLNetworkManager/Example",
+      "dependencies": {
+        "YLNetworkManager/YLNetwork": [
+
+        ]
+      }
+    }
+  ]
+}
